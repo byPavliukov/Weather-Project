@@ -37,6 +37,8 @@ select {
 
 .head-container {
     width: 80%;
+    font-size: 30px;
+    font-weight: 700;
 }
 
 .container {
