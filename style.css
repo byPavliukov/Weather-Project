@@ -39,7 +39,8 @@ select {
 }
 
 .head-container {
-    width: 100%;
+    width: 80%;
+    margin: 0 10%;
     font-size: 30px;
     font-weight: 700;
 }
@@ -48,7 +49,8 @@ select {
     display: grid;
     grid-template-areas: "forecast current error";
     gap: 5px;
-    grid-template-columns: 30% 30% 29%;
+    width: 90%;
+    grid-template-columns: 30% 30% 30%;
     margin: 0 5%;
 }
 
