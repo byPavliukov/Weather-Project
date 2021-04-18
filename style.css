@@ -34,8 +34,8 @@ select {
     font-weight: 500;
     justify-self: center;
     font-size: 25px;
-    width: 50px;
-    height: 35px;
+    width: 100px;
+    height: 50px;
 }
 
 .head-container {
@@ -142,6 +142,11 @@ select {
         font-size: 25px;
         font-weight: 700;
     }
+    select {
+        font-size: 20px;
+        width: 75px;
+        height: 40px;
+    }
 }
 
 @media (max-width: 750px) {
@@ -170,6 +175,11 @@ select {
     footer {
         font-size: 15px;
     }
+    select {
+        font-size: 17px;
+        width: 50px;
+        height: 30px;
+    }
 }
 
 @media (max-width: 440px) {
@@ -190,5 +200,8 @@ select {
     }
     footer {
         font-size: 10px;
+    }
+    select {
+        font-size: 14px;
     }
 }
