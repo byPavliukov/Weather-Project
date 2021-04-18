@@ -23,8 +23,8 @@ a{
 .block {
     display: grid;
     grid-template-columns: 20% 1fr;
-    margin: 0 10%;
-    width: 80%;
+    margin: 0 15%;
+    width: 70%;
     font-size: 20px;
 }
 
@@ -39,8 +39,8 @@ select {
 }
 
 .head-container {
-    width: 80%;
-    margin: 0 10%;
+    width: 70%;
+    margin: 0 15%;
     font-size: 30px;
     font-weight: 700;
 }
