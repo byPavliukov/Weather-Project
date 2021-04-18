@@ -1,0 +1,16 @@
+select {
+    height: 30px;
+  }
+  
+.text-left {
+    text-align: left;
+}
+.text-center {
+text-align: center;
+}
+.bd-r-10 {
+border-radius: 10px;
+}
+.outline-none {
+outline: none;
+}

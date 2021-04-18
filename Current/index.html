@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="unit">Current weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all.css">
+    <link rel="shortcut icon" href="/Forecast/favicon.png" type="image/png">
+</head>
+
+<body>
+    <div class="container bd-r-10">
+        <div class="subcontainer text-center">
+            <h1 class="lang-header text-center">Current weather</h1>
+            <div class="time-text date-time text-center"></div>
+            <div class="select-text lang-text text-center"> Select your city: </div>
+            <select id="language" class="bd-r-10 outline-none select-lang for-media">
+                <option value="en">EN</option>
+                <option value="ru">RU</option>
+                <option value="ua">UA</option>
+            </select>
+        </div>
+        <div class="subcontainer-info information-1 block-info bd-r-10">
+            <ul class="main-list val-name">
+                <li class="curr-temp text-center"></li>
+                <li class="icon-weather text-center"></li>
+                <li class="about-weather text-center"></li>
+            </ul>
+            <ul class="main-list name-row">
+                <li class="lang-pos-min">Min temperature</li>
+                <li class="lang-pos-max">Max temperature</li>
+                <li class="lang-pos-hum">Humidity</li>
+                <li class="lang-pos-pres">Pressure</li>
+                <li class="lang-pos-wind-sp">Wind speed</li>
+                <li class="lang-pos-wind-dg">Wind degree</li>
+            </ul>
+            <ul class="main-list name-value">
+                <li class="min-temp"></li>
+                <li class="max-temp margin"></li>
+                <li class="hum margin-3"></li>
+                <li class="pres"></li>
+                <li class="wind-sp"></li>
+                <li class="wind-dg margin-2"></li>
+            </ul>
+        </div>
+    </div>
+    <script src="script-lang.js"></script>
+    <script src="script-sities.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

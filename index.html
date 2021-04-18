@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="lang-unit">Weather for Ukraine</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all.css">
+    <link rel="shortcut icon" href="/Forecast/favicon.png" type="image/png">
+</head>
+<body>
+    <aside class="block">
+        <select id="language" class="bd-r-10 outline-none select-lang for-media">
+            <option value="en">EN</option>
+            <option value="ru">RU</option>
+            <option value="ua">UA</option>
+        </select>
+        <p class="date al-center"></p>
+    </aside>
+    <div class="head-container">
+        <p class="lang-header al-center">Forecast and current weather</p>
+        
+    </div>
+
+    <div class="container al-center">
+        
+        <div class="forecast">
+            <button class="glow-on-hover b-2 lang-button_forecast"><a href="/Forecast/index.html" target="_blank" rel="noopener noreferrer">Weather forecast</a></button>
+        </div>
+        <div class="current">
+            <button class="glow-on-hover b-1 lang-button_current"><a href="/Current/index.html" target="_blank" rel="noopener noreferrer">Current weather</a></button>
+        </div>
+        <div class="error">
+            <button class="glow-on-hover b-3 lang-button_err"><a href="mailto:pavliukov.ps@gmail.com">If you find an error, writing me.</a></button>
+        </div>
+
+    </div>
+    <hr>
+    <footer>
+        <p>by Pavliukov 2021 March</p>
+    </footer>
+
+    <script src="lang.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

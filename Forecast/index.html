@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forecast weather</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container border-r-10 text-center">
+
+
+        <div class="subcontainer al-item">
+
+            <h3 class="date-now"></h3>
+            <h3 class="select-city"> Select your city, please:</h3>
+            <select id="city" class="city">
+                <option value="703448">Kyiv</option>
+                <option value="698740">Odessa</option>
+                <option value="702550">Lviv</option>
+                <option value="700569">Mykolayiv</option>
+                <option value="707471">Ivano-Frankivsk</option>
+                <option value="709930">Dnipropetrovsk</option>
+                <option value="703845">Kryvyy Rih</option>
+                <option value="706448">Kherson</option>
+            </select>
+
+        </div>
+
+
+        <h1 class="header text-center">Weather forecast</h1>
+        <div class="out-1 out-container">
+            <div class="date al-self text-bold">Date</div>
+            <div class="text-bold">Max&deg;/Min&deg;</div>
+            <div class="about-weather text-bold"></div>
+
+            <div class="curr-city">Current date</div>
+            <div class="mmtemp al-self">min-temp/max-temp</div>
+            <div class="icon-weather al-self">icon</div>
+
+        </div>
+        <div class="information-1 info-container">
+            <ul class="main-list column-1 al-self">
+                <li class="curr-weather">Current temp &deg;C</li>
+                <li class="icon-weather-2">Icon weather</li>
+                <li class="fl"></li>
+            </ul>
+
+            <ul class="main-list column-2 al-self">
+                <li>
+                    <table class="table">
+                        <tr class="tr-table">
+                            <td class="td-1 minimal">Minimal temp per day</td>
+                            <td class="td-2 min-temp text-bold" colspan="2"></td>
+                        </tr>
+                        <tr class="tr-table">
+                            <td class="td-1 maximum">Maximum temp per day</td>
+                            <td class="td-2 max-temp text-bold" colspan="2"></td>
+                        </tr>
+                        <tr class="tr-table">
+                            <td class="td-1 humidity">Humidity</td>
+                            <td class="td-2 hum text-bold" colspan="2"></td>
+                        </tr>
+                        <tr class="tr-table">
+                            <td class="td-1 pressure">Pressure</td>
+                            <td class="td-2 pres text-bold"></td>
+                            <td class="td-3 text-bold">hPa</td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <ul class="main-list column-3 al-self">
+                <li>
+                    <table class="tr-table">
+                        <tr class="tr-table">
+                            <td class="td-1">Sunrise</td>
+                            <td class="td-2 sunrise text-bold"></td>
+                        </tr>
+                        <tr class="tr-table">
+                            <td class="td-1">Sunset</td>
+                            <td class="td-2 sunset text-bold"></td>
+                        </tr>
+                        <tr class="tr-table">
+                            <td class="td-1">Clouds</td>
+                            <td class="td-2 clouds text-bold"></td>
+                        </tr>
+                        <tr class="tr-table">
+                            <td class="td-1 wild-speed">Wind speed</td>
+                            <td class="td-2 wind-sp text-bold"></td>
+                            <td class="td-3 text-bold">m/s</td>
+                        </tr>
+                        <tr class="tr-table">
+                            <td class="td-1 wind-degree">Wind deg</td>
+                            <td class="td-2 wind-deg text-bold"></td>
+                            <td class="img-nav"></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+        </div>
+        <div class="out-2 out-container">
+            <div class="date-2 al-self text-bold">Date</div>
+            <div class="time-2 text-bold">Max&deg;/Min&deg;</div>
+            <div class="about-weather-2 text-bold"></div>
+
+            <div class="curr-city-2">Current date</div>
+            <div class="mmtemp-2 al-self">min-temp/max-temp</div>
+            <div class="icon-weather-3 al-self">icon</div>
+
+        </div>
+        <div class="information-2 info-container">
+            <ul class="main-list column-1 al-self">
+                <li class="curr-weather-2">Current temp &deg;C</li>
+                <li class="icon-weather-4">Icon weather</li>
+                <li class="fl-2"></li>
+            </ul>
+
+            <ul class="main-list column-2 al-self">
+                <li>
+                    <table class="table">
+                        <tr class="tr-table">
+                            <td class="td-1">Minimal temp per day</td>
+                            <td class="td-2 min-temp-2 text-bold" colspan="2"></td>
+                        </tr>
+                        <tr class="tr-table">
+                            <td class="td-1">Maximum temp per day</td>
+                            <td class="td-2 max-temp-2 text-bold" colspan="2"></td>
+                        </tr>
+                        <tr class="tr-table">
+                            <td class="td-1">Humidity</td>
+                            <td class="td-2 hum-2 text-bold" colspan="2"></td>
+                        </tr>
+                        <tr class="tr-table">
+                            <td class="td-1">Pressure</td>
+                            <td class="td-2 pres-2 text-bold"></td>
+                            <td class="td-3 text-bold">hPa</td>
+                        </tr>
+
+                    </table>
+                </li>
+            </ul>
+            <ul class="main-list column-3 al-self">
+                <li>
+                    <table class="tr-table">
+                        <tr class="tr-table">
+                            <td class="td-1">Sunrise</td>
+                            <td class="td-2 sunrise-2 text-bold"></td>
+                        </tr>
+                        <tr class="tr-table">
+                            <td class="td-1">Sunset</td>
+                            <td class="td-2 sunset-2 text-bold"></td>
+                        </tr>
+                        <tr class="tr-table">
+                            <td class="td-1">Clouds</td>
+                            <td class="td-2 clouds-2 text-bold"></td>
+                        </tr>
+                        <tr class="tr-table">
+                            <td class="td-1">Wind speed</td>
+                            <td class="td-2 wind-sp-2 text-bold"></td>
+                            <td class="td-3 text-bold">m/s</td>
+                        </tr>
+                        <tr class="tr-table">
+                            <td class="td-1">Wind deg</td>
+                            <td class="td-2 wind-deg-2 text-bold"></td>
+                            <td class="img-nav-2"></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+        </div>
+        <div class="out-3 out-container">
+
+            <div class="date-3 al-self text-bold">Date</div>
+            <div class="time-3 text-bold">Max&deg;/Min&deg;</div>
+            <div class="about-weather-3 text-bold"></div>
+
+            <div class="curr-city-3">Current date</div>
+            <div class="mmtemp-3 al-self">min-temp/max-temp</div>
+            <div class="icon-weather-5 al-self">icon</div>
+
+        </div>
+        <div class="information-3 info-container">
+            <ul class="main-list column-1 al-self">
+                <li class="curr-weather-3">Current temp &deg;C</li>
+                <li class="icon-weather-6">Icon weather</li>
+                <li class="fl-3"></li>
+            </ul>
+
+            <ul class="main-list column-2 al-self">
+                <li>
+                    <table class="table">
+                        <tr class="tr-table">
+                            <td class="td-1">Minimal temp per day</td>
+                            <td class="td-2 min-temp-3 text-bold" colspan="2"></td>
+                        </tr>
+                        <tr class="tr-table">
+                            <td class="td-1">Maximum temp per day</td>
+                            <td class="td-2 max-temp-3 text-bold" colspan="2"></td>
+                        </tr>
+                        <tr class="tr-table">
+                            <td class="td-1">Humidity</td>
+                            <td class="td-2 hum-3 text-bold" colspan="2"></td>
+                        </tr>
+                        <tr class="tr-table">
+                            <td class="td-1">Pressure</td>
+                            <td class="td-2 pres-3 text-bold"></td>
+                            <td class="td-3 text-bold">hPa</td>
+                        </tr>
+
+                    </table>
+                </li>
+            </ul>
+            <ul class="main-list column-3 al-self">
+                <li>
+                    <table class="tr-table">
+                        <tr class="tr-table">
+                            <td class="td-1">Sunrise</td>
+                            <td class="td-2 sunrise-3 text-bold"></td>
+                        </tr>
+                        <tr class="tr-table">
+                            <td class="td-1">Sunset</td>
+                            <td class="td-2 sunset-3 text-bold"></td>
+                        </tr>
+                        <tr class="tr-table">
+                            <td class="td-1">Clouds</td>
+                            <td class="td-2 clouds-3 text-bold"></td>
+                        </tr>
+                        <tr class="tr-table">
+                            <td class="td-1">Wind speed</td>
+                            <td class="td-2 wind-sp-3 text-bold"></td>
+                            <td class="td-3 text-bold">m/s</td>
+                        </tr>
+                        <tr class="tr-table">
+                            <td class="td-1">Wind deg</td>
+                            <td class="td-2 wind-deg-3 text-bold"></td>
+                            <td class="img-nav-3"></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+        </div>
+        <div class="out-4 out-container">
+
+            <div class="date-4 al-self text-bold">Date</div>
+            <div class="time-4 text-bold">Max&deg;/Min&deg;</div>
+            <div class="about-weather-4 text-bold"></div>
+
+            <div class="curr-city-4">Current date</div>
+            <div class="mmtemp-4 al-self">min-temp/max-temp</div>
+            <div class="icon-weather-7 al-self">icon</div>
+
+        </div>
+        <div class="information-4 info-container">
+            <ul class="main-list column-1 al-self">
+                <li class="curr-weather-4">Current temp &deg;C</li>
+                <li class="icon-weather-8">Icon weather</li>
+                <li class="fl-4"></li>
+            </ul>
+
+            <ul class="main-list column-2 al-self">
+                <li>
+                    <table class="table">
+                        <tr class="tr-table">
+                            <td class="td-1">Minimal temp per day</td>
+                            <td class="td-2 min-temp-4 text-bold" colspan="2"></td>
+                        </tr>
+                        <tr class="tr-table">
+                            <td class="td-1 lang-maximum">Maximum temp per day</td>
+                            <td class="td-2 max-temp-4 text-bold" colspan="2"></td>
+                        </tr>
+                        <tr class="tr-table">
+                            <td class="td-1 lang-humidity">Humidity</td>
+                            <td class="td-2 hum-4 text-bold" colspan="2"></td>
+                        </tr>
+                        <tr class="tr-table">
+                            <td class="td-1 lang-pressure">Pressure</td>
+                            <td class="td-2 pres-4 text-bold"></td>
+                            <td class="td-3 text-bold">hPa</td>
+                        </tr>
+
+                    </table>
+                </li>
+            </ul>
+            <ul class="main-list column-3 al-self">
+                <li>
+                    <table class="tr-table">
+                        <tr class="tr-table">
+                            <td class="td-1">Sunrise</td>
+                            <td class="td-2 sunrise-4 text-bold"></td>
+                        </tr>
+                        <tr class="tr-table">
+                            <td class="td-1">Sunset</td>
+                            <td class="td-2 sunset-4 text-bold"></td>
+                        </tr>
+                        <tr class="tr-table">
+                            <td class="td-1">Clouds</td>
+                            <td class="td-2 clouds-4 text-bold"></td>
+                        </tr>
+                        <tr class="tr-table">
+                            <td class="td-1">Wind speed</td>
+                            <td class="td-2 wind-sp-4 text-bold"></td>
+                            <td class="td-3 text-bold">m/s</td>
+                        </tr>
+                        <tr class="tr-table">
+                            <td class="td-1">Wind deg</td>
+                            <td class="td-2 wind-deg-4 text-bold"></td>
+                            <td class="img-nav-4"></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
